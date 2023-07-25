@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>{{title}}</li>
+        <li>css</li>
+        <li>js</li>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique saepe dolore veniam doloribus omnis
+            quidem totam reiciendis autem sequi, voluptate, accusantium nihil mollitia tempora neque. Tenetur,
+            molestias. Nam, aspernatur aut!
+        </p>
+        {% for i in range(10)%}
+        <div>jinja2 is great!!! {{i}}</div>
+        {% endfor %}
+
+        {% if num == 1 %}
+        <h1>good  {{num}} </h1>
+        {% elif num == 2 %}
+        <h1>bad</h1>
+        {% else %}
+        <h1>not</h1>
+        {% endif %}
+        <h1>num : {{num}}</h1>
+    </ul>
+</body>
+
+</html>
